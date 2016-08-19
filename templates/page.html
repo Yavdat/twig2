@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block heading %}Приветствие {%endblock%}
+{% block content %}
+<p>Hello {{user.name}}</p>
+<address>{{user.address}}</address>
+<ul>
+    {% for i in 1..3 %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>
+{{parent()}}
+{%endblock%}
+{% block footer %}<h2>Конец чего-то</h2> {{parent()}}{%endblock%}
