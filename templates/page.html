@@ -1,9 +1,21 @@
 {% extends 'index.html' %}
+{%import 'macros.html' as mac %}
 
 {% block heading %}Приветствие {%endblock%}
 {% block content %}
-<p>Hello {{user.name}}</p>
+<p>Hello {{user.name|default('кто-то')|raw}}</p>
 <address>{{user.address}}</address>
+    <ul>
+        {% for id ,per in users%}
+        <li> {{loop.index}} :{{id}} {{mac.bold(per.name)}}
+        {% endfor %}
+    </ul>
+<blockquote>{{user.birthdate|date('d.m.y')}}</blockquote>
+    {% set arr=1..20 %}
+    {% set parts=arr|batch(3,'---') %}
+    {% for part in parts %}
+        <p>{{part|join(',')}}</p>
+    {% endfor %}
 <ul>
     {% for i in 1..3 %}
     <li>{{i}}</li>

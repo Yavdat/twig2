@@ -4,27 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1467f1ba8b1a098a6689633d9cb42496",
-    "content-hash": "05a33d8dd5b14a90d343f8f972fd47cc",
+    "hash": "340759dd3ccac094f293dc988967d625",
+    "content-hash": "2d92722f1491bac333ade1447b5f90c2",
     "packages": [
         {
             "name": "twig/twig",
-            "version": "1.6.5",
+            "version": "v1.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "97ade38d5c0b095f8ed9fadb61f71ab79f13d7af"
+                "reference": "27f3428b08c7f656d6824359a9d9dee3f5fce31b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/97ade38d5c0b095f8ed9fadb61f71ab79f13d7af",
-                "reference": "97ade38d5c0b095f8ed9fadb61f71ab79f13d7af",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/27f3428b08c7f656d6824359a9d9dee3f5fce31b",
+                "reference": "27f3428b08c7f656d6824359a9d9dee3f5fce31b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Twig_": "lib/"
@@ -32,7 +37,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-3"
             ],
             "authors": [
                 {
@@ -49,7 +54,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2012-04-11 09:00:38"
+            "time": "2013-04-08 12:40:11"
         }
     ],
     "packages-dev": [],
